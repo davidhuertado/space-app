@@ -1,0 +1,73 @@
+:root {
+  --dark-blue: #0b0d17;
+  --light-blue: #d0d6f9;
+  --white: #ffffff;
+}
+* {
+  font-family: 'Barlow Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-size: 100px;
+  font-family: 'Bellefair', serif;
+}
+.h2 {
+  font-size: 56px;
+  font-family: 'Bellefair', serif;
+}
+.h3 {
+  font-size: 24px;
+  font-family: 'Bellefair', serif;
+}
+.h4 {
+  font-size: 20px;
+  font-family: 'Bellefair', serif;
+}
+.h5 {
+  font-size: 16px;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.75px;
+}
+.h6.sub1 {
+  font-size: 28px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.h6.sub2 {
+  font-size: 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.35px;
+}
+p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--light-blue);
+}
+
+@media screen and (min-width: 972px) {
+  .h1 {
+    font-size: 150px;
+  }
+  .h2 {
+    font-size: 100px;
+  }
+  .h3 {
+    font-size: 56px;
+  }
+  .h4 {
+    font-size: 32px;
+  }
+  .h5 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
