@@ -1,0 +1,26 @@
+.technology .img-container {
+  width: 100;
+  margin-bottom: 100px;
+}
+.technology img {
+  max-width: 100%;
+  height: auto;
+}
+
+.technology .h4 {
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+.technology .h3 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.technology .sub2 {
+  margin-bottom: 8px;
+}
+.technology p {
+  padding: 0 24px;
+}

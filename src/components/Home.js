@@ -14,6 +14,7 @@ const Home = () => {
         back, and relax because we’ll give you a truly out of this world
         experience!
       </p>
+
       <span className="enter-span">
         <h4 className="h4">Explore</h4>
       </span>

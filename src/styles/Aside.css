@@ -1,0 +1,36 @@
+.aside {
+  width: 250px;
+  position: absolute;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  top: 0;
+  right: 0;
+
+  transition: right 0.5s ease-in-out 0s;
+}
+.aside.hide {
+  right: -250px;
+}
+.aside .close-div {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.aside .nav {
+  list-style: none;
+  margin-top: 110px;
+  margin-left: 30px;
+  text-align: left;
+}
+.aside li {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 30px 0;
+  color: #fff;
+  cursor: pointer;
+}
+.aside li span {
+  font-weight: bold;
+}

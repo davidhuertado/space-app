@@ -1,0 +1,28 @@
+.technologies {
+}
+.technologies .h5 {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.technologies .h5 span {
+  opacity: 0.25;
+}
+.technologies .swiper-pagination {
+  top: 220px;
+}
+.technologies .swiper-pagination-bullet {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: var(--white);
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.technologies .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--white);
+  color: #0b0d17;
+}

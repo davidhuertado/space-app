@@ -1,0 +1,39 @@
+.member .h4 {
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+.member .h3 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.member .img-container {
+  width: 327px;
+  border-bottom: solid 1px #383b4b;
+  margin-bottom: 60px;
+}
+.member img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: 220px;
+}
+.crew .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.17;
+}
+.crew .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.crew .swiper-horizontal > .swiper-pagination-bullets,
+.crew .swiper-pagination-bullets.swiper-pagination-horizontal,
+.crew .swiper-pagination-custom,
+.crew .swiper-pagination-fraction {
+  top: 230px;
+  position: absolute;
+}
