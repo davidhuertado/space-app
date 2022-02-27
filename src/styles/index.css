@@ -12,6 +12,7 @@
 .h1 {
   font-size: 100px;
   font-family: 'Bellefair', serif;
+  font-weight: 400;
 }
 .h2 {
   font-size: 56px;
@@ -38,6 +39,7 @@
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  color: #fff;
 }
 .h6.sub2 {
   font-size: 14px;
@@ -63,6 +65,42 @@ body {
 .swiper-pagination-bullet {
   /* font-size: 14px !important; */
   text-transform: uppercase;
+}
+@media screen and (min-width: 601px) {
+  .h1 {
+    font-size: 150px;
+  }
+  .h2 {
+    font-size: 80px;
+  }
+  .h3 {
+    font-size: 56px;
+  }
+  .h4 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .h5 {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 28px;
+  }
+  .nav-text {
+    font-size: 16px;
+  }
+  .swiper-pagination-bullet {
+    font-size: 16px !important;
+    text-transform: uppercase;
+  }
+  .hide-tablet {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {

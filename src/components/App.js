@@ -27,7 +27,7 @@ function App() {
   const [appBackground, setAppBackground] = useState(null);
   const getViewport = () => {
     const viewportWidth = window.innerWidth;
-    if (viewportWidth < 768) return 'mobile';
+    if (viewportWidth < 600) return 'mobile';
     else if (viewportWidth < 972) return 'tablet';
     else return 'desktop';
   };

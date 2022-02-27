@@ -26,9 +26,21 @@
 .enter-span .h4 {
   color: #0b0d17;
   text-transform: uppercase;
+  font-weight: 400;
 }
 .enter-span:hover {
   box-shadow: -1px -1px 5px 70px rgba(255, 255, 255, 0.11);
   -webkit-box-shadow: -1px -1px 5px 70px rgba(255, 255, 255, 0.11);
   -moz-box-shadow: -1px -1px 5px 70px rgba(255, 255, 255, 0.11);
+}
+@media screen and (min-width: 601px) {
+  .home {
+    padding: 100px 150px 0;
+  }
+  .home .enter-span {
+    width: 242px;
+    height: 242px;
+
+    margin: 156px auto;
+  }
 }

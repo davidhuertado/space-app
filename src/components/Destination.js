@@ -33,18 +33,19 @@ const Destination = ({ destinationData }) => {
 
   return (
     <section className="destination">
-      <h5 className="h5">
-        <span>01</span> Pick your destination
-      </h5>
-      <>
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {renderedPlanets}
-        </Swiper>
-      </>
+      <div className="align-title-div">
+        <h5 className="h5">
+          <span>01</span> Pick your destination
+        </h5>
+      </div>
+
+      <Swiper
+        pagination={pagination}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {renderedPlanets}
+      </Swiper>
     </section>
   );
 };

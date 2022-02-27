@@ -1,3 +1,6 @@
+.destination {
+  padding: 0 24px;
+}
 .destination .h5 {
   text-transform: uppercase;
   color: var(--white);
@@ -51,11 +54,11 @@
   color: #000;
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
-  display: none;
+  color: #fff;
+  margin: 0 25px !important;
 }
 
 .destination .swiper-pagination-bullet-active {
-  color: #fff;
   background: #007aff;
   display: inline !important;
 }
@@ -88,5 +91,35 @@
   border-radius: 0;
   border-bottom: solid 3px #fff;
 }
-.destination .swiper-pagination-bullet {
+
+@media screen and (min-width: 601px) {
+  .destination {
+    padding: 0 40px;
+  }
+  .destination .h2 {
+    line-height: 64px;
+    line-height: 92px;
+  }
+  .destination .swiper-slide img {
+    margin-bottom: 100px;
+    width: 300px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    top: 350px;
+  }
+  .destination .time-destination-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .destination .distance,
+  .destination .travel {
+    margin: 0 30px;
+    text-align: center;
+  }
+  .destination .align-title-div {
+    text-align: left;
+  }
 }

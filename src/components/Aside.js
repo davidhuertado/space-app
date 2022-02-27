@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Aside.css';
 import closeIcon from '../assets/shared/icon-close.svg';
+import { Link } from 'react-router-dom';
 
 const Aside = ({ hidden, onCloseClick }) => {
   return (
@@ -14,17 +15,25 @@ const Aside = ({ hidden, onCloseClick }) => {
         />
       </div>
       <ul className="nav">
-        <li>
-          <span>00</span> Home
+        <li className="links">
+          <Link to="/">
+            <span>00</span> Home
+          </Link>
         </li>
-        <li>
-          <span>01</span> Destination
+        <li className="links">
+          <Link to="/destination">
+            <span>01</span> Destination
+          </Link>
         </li>
-        <li>
-          <span>02</span> Crew
+        <li className="links">
+          <Link to="/crew">
+            <span>02</span> Crew
+          </Link>
         </li>
-        <li>
-          <span>03</span> Technology
+        <li className="links">
+          <Link to="/technologies">
+            <span>03</span> Technology
+          </Link>
         </li>
       </ul>
     </aside>

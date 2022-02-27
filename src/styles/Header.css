@@ -12,3 +12,41 @@
   margin: 0 0 0 auto;
   cursor: pointer;
 }
+@media screen and (min-width: 601px) {
+  .header {
+    padding: 0;
+  }
+  .header .logo-container {
+    padding: 24px 40px;
+  }
+  .header .menu-tablet {
+    margin: 0 0 0 auto;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    width: 450px;
+  }
+  .header .menu-tablet ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 96px;
+  }
+  .header .menu-tablet a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white);
+  }
+  .header .menu-tablet li {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+  }
+  .header .menu-tablet li.active {
+    border-bottom: solid 3px #fff;
+  }
+}
