@@ -8,9 +8,11 @@ const Member = ({ member }) => {
       <div className="img-container">
         <img src={require(`../assets${imgSrc}`)} alt="member.name" />
       </div>
-      <h4 className="h4">{member.role}</h4>
-      <h3 className="h3">{member.name}</h3>
-      <p>{member.bio}</p>
+      <div>
+        <h4 className="h4">{member.role}</h4>
+        <h3 className="h3">{member.name}</h3>
+        <p>{member.bio}</p>
+      </div>
     </div>
   );
 };

@@ -21,14 +21,14 @@ const Crew = ({ crewData }) => {
 
   return (
     <section className="crew">
-      <h5 className="h5">
-        <span>02</span> Meet your crew
-      </h5>
-      <>
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-          {renderedMembers}
-        </Swiper>
-      </>
+      <div className="align-title-div">
+        <h5 className="h5">
+          <span>02</span> Meet your crew
+        </h5>
+      </div>
+      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        {renderedMembers}
+      </Swiper>
     </section>
   );
 };

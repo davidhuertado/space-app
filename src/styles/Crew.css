@@ -9,3 +9,11 @@
 .crew .h5 span {
   opacity: 0.25;
 }
+@media screen and (min-width: 601px) {
+  .crew .align-title-div {
+    text-align: left;
+  }
+  .crew .swiper-wrapper {
+    align-items: flex-end;
+  }
+}

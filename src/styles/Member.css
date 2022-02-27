@@ -37,3 +37,28 @@
   top: 230px;
   position: absolute;
 }
+@media screen and (min-width: 601px) {
+  .member {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 150px 0;
+  }
+  .member .img-container {
+    width: 330px;
+    margin: 120px auto 0;
+    height: auto;
+    width: auto;
+  }
+  .member img {
+    height: 532px;
+  }
+  .member .swiper-wrapper {
+    align-items: flex-end;
+  }
+  .member .crew .swiper-horizontal > .swiper-pagination-bullets,
+  .crew .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .crew .swiper-pagination-custom,
+  .crew .swiper-pagination-fraction {
+    top: 330px;
+  }
+}

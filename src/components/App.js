@@ -13,6 +13,9 @@ import data from '../data.json';
 import backgroundHomeDesktop from '../assets/home/background-home-desktop.jpg';
 import backgroundHomeTablet from '../assets/home/background-home-tablet.jpg';
 import backgroundHomeMobile from '../assets/home/background-home-mobile.jpg';
+import backgroundDestinationMobile from '../assets/destination/background-destination-mobile.jpg';
+import backgroundDestinationTablet from '../assets/destination/background-destination-tablet.jpg';
+import backgroundDestinationDesktop from '../assets/destination/background-destination-desktop.jpg';
 import backgroundCrewMobile from '../assets/crew/background-crew-mobile.jpg';
 import backgroundCrewTablet from '../assets/crew/background-crew-tablet.jpg';
 import backgroundCrewDesktop from '../assets/crew/background-crew-desktop.jpg';
@@ -42,6 +45,12 @@ function App() {
       setAppBackground(backgroundHomeTablet);
     } else if (pathname === '/' && viewport === 'desktop') {
       setAppBackground(backgroundHomeDesktop);
+    } else if (pathname === '/destination' && viewport === 'mobile') {
+      setAppBackground(backgroundDestinationMobile);
+    } else if (pathname === '/destination' && viewport === 'tablet') {
+      setAppBackground(backgroundDestinationTablet);
+    } else if (pathname === '/destination' && viewport === 'desktop') {
+      setAppBackground(backgroundDestinationDesktop);
     } else if (pathname === '/crew' && viewport === 'mobile') {
       setAppBackground(backgroundCrewMobile);
     } else if (pathname === '/crew' && viewport === 'tablet') {
