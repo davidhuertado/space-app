@@ -46,7 +46,30 @@
 
     height: 100%;
   }
-  .header .menu-tablet li.active {
+  .header .menu-tablet li.active,
+  .header .menu-tablet li.active:hover {
     border-bottom: solid 3px #fff;
+    margin-bottom: -3px;
+  }
+  .header .menu-tablet li:hover {
+    border-bottom: solid 3px #a6aab5;
+    margin-bottom: -3px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header {
+    margin: 40px 0;
+  }
+  .menu-tablet span {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .header .logo-container {
+    padding: 24px 55px;
+  }
+  .header .menu-tablet {
+    width: 60%;
+    max-width: 830px;
   }
 }

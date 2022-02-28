@@ -8,10 +8,12 @@ const Technology = ({ technology }) => {
       <div className="img-container">
         <img src={require(`../assets${imgSrc}`)} alt={technology.name} />
       </div>
-      <h6 className="h6 sub2">The terminology</h6>
+      <div className="text-container">
+        <h6 className="h6 sub2">The terminology ...</h6>
 
-      <h3 className="h3">{technology.name}</h3>
-      <p>{technology.description}</p>
+        <h3 className="h3">{technology.name}</h3>
+        <p>{technology.description}</p>
+      </div>
     </div>
   );
 };

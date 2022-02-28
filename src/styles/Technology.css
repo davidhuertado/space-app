@@ -1,5 +1,5 @@
 .technology .img-container {
-  width: 100;
+  width: 100%;
   margin-bottom: 100px;
 }
 .technology img {
@@ -23,4 +23,13 @@
 }
 .technology p {
   padding: 0 24px;
+}
+@media screen and (min-width: 601px) {
+  .technology .text-container {
+    width: 458px;
+    margin: 0 auto;
+  }
+  .technology .img-container {
+    margin-bottom: 150px;
+  }
 }

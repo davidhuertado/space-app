@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0;
 }
+.hide-mobile {
+  display: none;
+}
 
 .h1 {
   font-size: 100px;
@@ -75,7 +78,7 @@ body {
     font-size: 80px;
   }
   .h3 {
-    font-size: 56px;
+    font-size: 40px;
   }
   .h4 {
     font-size: 32px;
@@ -85,6 +88,9 @@ body {
     font-size: 20px;
     font-weight: normal;
     text-transform: uppercase;
+  }
+  .h6.sub2 {
+    font-size: 16px;
   }
 
   p {
@@ -102,9 +108,15 @@ body {
   .hide-tablet {
     display: none;
   }
+  .hide-mobile {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .d-desktop {
+    display: block;
+  }
   .h1 {
     font-size: 150px;
   }

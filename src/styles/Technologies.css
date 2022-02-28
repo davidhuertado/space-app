@@ -26,3 +26,17 @@
   background-color: var(--white);
   color: #0b0d17;
 }
+@media screen and (min-width: 601px) {
+  .technologies .align-title-div {
+    text-align: left;
+    padding: 0 40px;
+  }
+  .technologies .swiper-pagination-bullet {
+    width: 60px;
+    height: 60px;
+    font-size: 24px !important;
+  }
+  .technologies .swiper-pagination {
+    top: 420px;
+  }
+}

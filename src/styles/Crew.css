@@ -16,4 +16,7 @@
   .crew .swiper-wrapper {
     align-items: flex-end;
   }
+  .crew .swiper-slide {
+    height: 956px;
+  }
 }

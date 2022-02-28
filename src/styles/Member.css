@@ -35,7 +35,7 @@
 .crew .swiper-pagination-custom,
 .crew .swiper-pagination-fraction {
   top: 230px;
-  position: absolute;
+  /* position: absolute; */
 }
 @media screen and (min-width: 601px) {
   .member {
@@ -48,9 +48,11 @@
     margin: 120px auto 0;
     height: auto;
     width: auto;
+    border: 0;
   }
   .member img {
     height: 532px;
+    max-width: fit-content;
   }
   .member .swiper-wrapper {
     align-items: flex-end;
@@ -59,6 +61,6 @@
   .crew .swiper-pagination-bullets.swiper-pagination-horizontal,
   .crew .swiper-pagination-custom,
   .crew .swiper-pagination-fraction {
-    top: 330px;
+    top: 300px;
   }
 }

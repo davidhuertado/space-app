@@ -27,18 +27,19 @@ const Technologies = ({ technologiesData }) => {
 
   return (
     <section className="technologies">
-      <h5 className="h5">
-        <span>03</span> Space launch 101
-      </h5>
-      <>
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {renderedTechnologies}
-        </Swiper>
-      </>
+      <div className="align-title-div">
+        <h5 className="h5">
+          <span>03</span> Space launch 101
+        </h5>
+      </div>
+
+      <Swiper
+        pagination={pagination}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {renderedTechnologies}
+      </Swiper>
     </section>
   );
 };

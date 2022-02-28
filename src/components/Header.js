@@ -15,10 +15,12 @@ const Header = ({ onHamburguerClick, hidden }) => {
     { name: 'Technology', route: '/technologies' },
   ];
 
-  const renderedMenuLi = menuLiArray.map(({ name, route }) => {
+  const renderedMenuLi = menuLiArray.map(({ name, route }, index) => {
     return (
       <li className={route === pathname ? 'active' : ''}>
-        <Link to={route}>{name}</Link>
+        <Link to={route}>
+          <span className="hide-mobile d-desktop">{'0' + index}</span> {name}
+        </Link>
       </li>
     );
   });
@@ -39,21 +41,7 @@ const Header = ({ onHamburguerClick, hidden }) => {
         />
       </div>
       <div className="hide-mobile menu-tablet">
-        <ul>
-          {/* <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/destination">Destination</Link>
-          </li>
-          <li>
-            <Link to="/crew">Crew</Link>
-          </li>
-          <li>
-            <Link to="/technologies">Technology</Link>
-          </li> */}
-          {renderedMenuLi}
-        </ul>
+        <ul>{renderedMenuLi}</ul>
       </div>
     </header>
   );
