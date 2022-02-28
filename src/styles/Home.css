@@ -44,3 +44,20 @@
     margin: 156px auto;
   }
 }
+@media screen and (min-width: 992px) {
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 250px 160px;
+  }
+  .home .text-div {
+    text-align: left;
+    max-width: 450px;
+  }
+  .home .enter-span {
+    min-width: 274px;
+    min-height: 274px;
+    margin: 0 0 0 auto;
+  }
+}

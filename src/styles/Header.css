@@ -55,6 +55,9 @@
     border-bottom: solid 3px #a6aab5;
     margin-bottom: -3px;
   }
+  .hide-mobile.line {
+    display: none;
+  }
 }
 @media screen and (min-width: 992px) {
   .header {
@@ -70,6 +73,24 @@
   }
   .header .menu-tablet {
     width: 60%;
-    max-width: 830px;
   }
+  .header .menu-tablet ul {
+    padding: 0 10.5vw 0 8vw;
+  }
+
+  .header .menu-tablet a {
+    font-size: 16px;
+  }
+  .hide-mobile.line {
+    display: inline-block;
+    height: 1px;
+    width: 40vw;
+    background: var(--white);
+    opacity: 0.25;
+    position: relative;
+    left: 2vw;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1600px) {
 }

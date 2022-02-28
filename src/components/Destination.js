@@ -12,6 +12,7 @@ import { Pagination } from 'swiper';
 
 const Destination = ({ destinationData }) => {
   const pagination = {
+    el: '.pagination-container',
     clickable: true,
     renderBullet: function (index, className) {
       return (

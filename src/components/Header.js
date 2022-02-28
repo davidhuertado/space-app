@@ -32,6 +32,7 @@ const Header = ({ onHamburguerClick, hidden }) => {
           <img src={logo} alt="logo" className="logo" />
         </div>
       </Link>
+      <span className="hide-mobile line"></span>
       <div className="burguer-container hide-tablet">
         <img
           onClick={() => onHamburguerClick(!hidden)}
