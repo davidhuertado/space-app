@@ -19,6 +19,7 @@ const Technologies = ({ technologiesData }) => {
     );
   });
   const pagination = {
+    el: '.pagination-container',
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + (index + 1) + '</span>';

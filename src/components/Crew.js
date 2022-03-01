@@ -18,6 +18,10 @@ const Crew = ({ crewData }) => {
       </SwiperSlide>
     );
   });
+  const pagination = {
+    clickable: true,
+    el: '.pagination-container',
+  };
 
   return (
     <section className="crew">
@@ -26,7 +30,11 @@ const Crew = ({ crewData }) => {
           <span>02</span> Meet your crew
         </h5>
       </div>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper
+        pagination={pagination}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
         {renderedMembers}
       </Swiper>
     </section>

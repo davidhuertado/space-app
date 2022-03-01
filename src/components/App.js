@@ -31,7 +31,7 @@ function App() {
   const getViewport = () => {
     const viewportWidth = window.innerWidth;
     if (viewportWidth < 600) return 'mobile';
-    else if (viewportWidth < 972) return 'tablet';
+    else if (viewportWidth < 992) return 'tablet';
     else return 'desktop';
   };
 

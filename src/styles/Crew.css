@@ -13,10 +13,24 @@
   .crew .align-title-div {
     text-align: left;
   }
-  .crew .swiper-wrapper {
+  /* .crew .swiper-wrapper {
     align-items: flex-end;
+  } */
+  /* .crew .swiper-slide {
+    height: 956px;
+  } */
+  .crew .h5 {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .crew {
+    padding: 76px 0 0;
+  }
+  .crew .align-title-div {
+    padding: 0 9.3vw;
   }
   .crew .swiper-slide {
-    height: 956px;
+    height: auto;
   }
 }

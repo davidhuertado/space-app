@@ -1,9 +1,7 @@
-.technologies {
-}
 .technologies .h5 {
-  margin-bottom: 0px;
   text-transform: uppercase;
   color: var(--white);
+  margin-bottom: 32px;
 }
 .technologies .h5 span {
   opacity: 0.25;
@@ -11,17 +9,7 @@
 .technologies .swiper-pagination {
   top: 220px;
 }
-.technologies .swiper-pagination-bullet {
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: 1px solid #ffffff;
-  color: var(--white);
-  font-size: 16px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .technologies .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--white);
   color: #0b0d17;
@@ -31,12 +19,16 @@
     text-align: left;
     padding: 0 40px;
   }
-  .technologies .swiper-pagination-bullet {
-    width: 60px;
-    height: 60px;
-    font-size: 24px !important;
-  }
+
   .technologies .swiper-pagination {
     top: 420px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .technologies .align-title-div {
+    padding-left: 9.3vw;
+  }
+  .technologies {
+    padding: 76px 0 0;
   }
 }

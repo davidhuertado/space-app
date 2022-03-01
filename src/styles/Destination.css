@@ -120,14 +120,23 @@
   }
   .destination .align-title-div {
     text-align: left;
+    margin-bottom: 60px;
+  }
+  .destination .planet {
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 992px) {
   .destination {
-    padding: 76px 9.3vw;
+    padding: 76px 0 0;
+  }
+  .destination .align-title-div {
+    padding-left: 9.3vw;
   }
   .planet {
     display: flex;
+    /* width: 100%; */
+    padding: 0 9.3vw;
     width: 100%;
   }
   .planet .img-container {
