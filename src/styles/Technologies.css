@@ -1,3 +1,7 @@
+.technologies {
+  padding-bottom: 70px;
+  margin: auto 0 0;
+}
 .technologies .h5 {
   text-transform: uppercase;
   color: var(--white);
@@ -27,6 +31,7 @@
 @media screen and (min-width: 992px) {
   .technologies .align-title-div {
     padding-left: 9.3vw;
+    margin-bottom: 17vh;
   }
   .technologies {
     padding: 76px 0 0;

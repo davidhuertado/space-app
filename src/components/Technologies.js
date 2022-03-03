@@ -13,7 +13,7 @@ import { Pagination } from 'swiper';
 const Technologies = ({ technologiesData }) => {
   const renderedTechnologies = technologiesData.map((technology) => {
     return (
-      <SwiperSlide>
+      <SwiperSlide key={technology.name}>
         <Technology technology={technology} />
       </SwiperSlide>
     );

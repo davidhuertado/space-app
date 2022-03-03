@@ -26,7 +26,7 @@ const Destination = ({ destinationData }) => {
   };
   const renderedPlanets = destinationData.map((planet) => {
     return (
-      <SwiperSlide>
+      <SwiperSlide key={planet.name}>
         <Planet planet={planet} />
       </SwiperSlide>
     );

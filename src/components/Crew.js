@@ -13,7 +13,7 @@ import { Pagination } from 'swiper';
 const Crew = ({ crewData }) => {
   const renderedMembers = crewData.map((member) => {
     return (
-      <SwiperSlide>
+      <SwiperSlide key={member.name}>
         <Member member={member} />
       </SwiperSlide>
     );

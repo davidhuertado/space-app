@@ -25,8 +25,7 @@ import backgroundTechnologyMobile from '../assets/technology/background-technolo
 
 function App() {
   const [hiddenAside, setHiddenAside] = useState(true);
-  // const { pathname } = useLocation();
-  // const [location, setLocation] = useState('');
+  //state for setting background
   const [appBackground, setAppBackground] = useState(null);
   const getViewport = () => {
     const viewportWidth = window.innerWidth;
@@ -66,25 +65,14 @@ function App() {
     }
   }, [pathname]);
 
-  // const { pathname } = useLocation();
-  // const appElement = useRef(null);
-  // console.log(appElement);
-  // console.log(pathname);
-
-  // const setBackground = () => {
-  //   const slicedPathname = pathname.slice(1);
-  //   console.log(slicedPathname);
-  //   const viewport = getViewport();
-  //   console.log(appElement.current);
-
-  //   appElement.current.style.backgroundImage = `url(../assets/${slicedPathname}/background-${slicedPathname}-${viewport}.jpg`;
-  // };
-
-  // setBackground();
   return (
     <div className="App" style={{ backgroundImage: `url(${appBackground})` }}>
-      <Header hidden={hiddenAside} onHamburguerClick={setHiddenAside} />
-      <Aside hidden={hiddenAside} onCloseClick={setHiddenAside} />
+      <Header
+        pathname={pathname}
+        hidden={hiddenAside}
+        setHiddenAside={setHiddenAside}
+      />
+      <Aside hidden={hiddenAside} setHiddenAside={setHiddenAside} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
